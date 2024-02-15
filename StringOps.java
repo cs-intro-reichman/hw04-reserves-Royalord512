@@ -28,13 +28,13 @@ public class StringOps {
 
 
         //camelCase tester
-        //System.out.println(camelCase("   Intro to coMPUter   sCIEncE"));
+        System.out.println(camelCase("Hello World"));
 
         //allOfIndex tester
-        int[] print = allIndexOf("Hello world",'d');
-        for (int i = 0; i < print.length; i++) {
-            System.out.print(print[i] + " ");
-        }
+        //int[] print = allIndexOf("Hello world",'d');
+        //for (int i = 0; i < print.length; i++) {
+          //  System.out.print(print[i] + " ");
+        //}
     }
 
     public static String capVowelsLowRest (String string) {
@@ -73,7 +73,7 @@ public class StringOps {
                 i++;
                 if (string.charAt(i) >= 'a' && string.charAt(i) <= 'z')
                     camelCase += (char) (string.charAt(i) - 32);
-                else if (string.charAt(i) >= 'A' && string.charAt(i) >= 'Z')
+                else if (string.charAt(i) >= 'A' && string.charAt(i) <= 'Z')
                     camelCase += string.charAt(i);
             }
             
